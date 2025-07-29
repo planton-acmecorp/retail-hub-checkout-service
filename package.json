@@ -1,0 +1,35 @@
+{
+  "name": "checkout-service",
+  "version": "0.1.0",
+  "description": "ACME Corp RetailHub Checkout API",
+  "main": "dist/app.js",
+  "scripts": {
+    "start": "node dist/app.js",
+    "dev": "nodemon --exec ts-node src/app.ts",
+    "build": "tsc",
+    "prebuild": "rm -rf dist"
+  },
+  "keywords": ["acme", "retailhub", "checkout", "express"],
+  "author": "ACME Corp",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "morgan": "^1.10.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^22.8.0",
+    "@types/uuid": "^9.0.7",
+    "nodemon": "^3.0.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=23.1.0"
+  },
+  "packageManager": "pnpm@9.12.0"
+}
