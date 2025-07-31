@@ -1,0 +1,5 @@
+apiVersion: kubernetes.project-planton.org/v1
+kind: MicroserviceKubernetes
+metadata:
+  name: retail-hub-checkout-service
+  org: acmecorp

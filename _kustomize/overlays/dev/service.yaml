@@ -1,0 +1,24 @@
+apiVersion: kubernetes.project-planton.org/v1
+kind: MicroserviceKubernetes
+metadata:
+  env: dev
+  name: retail-hub-checkout-service
+spec:
+  availability:
+    minReplicas: 1
+  container:
+    app:
+      ports:
+      - appProtocol: http
+        containerPort: 3000
+        name: rest
+        networkProtocol: TCP
+        servicePort: 80
+      resources:
+        limits:
+          cpu: 500m
+          memory: 500Mi
+        requests:
+          cpu: 50m
+          memory: 100Mi
+  version: main
