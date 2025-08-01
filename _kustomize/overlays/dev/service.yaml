@@ -4,7 +4,7 @@ metadata:
   env: dev
   name: retail-hub-checkout-service
 spec:
-  availability:
+  availabilit:
     minReplicas: 1
   container:
     app:
